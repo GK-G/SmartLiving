@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:id="@+id/content_main"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PlantRecommendationActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+
+            <ImageView
+                android:id="@+id/Plantimageview"
+                style="@style/Widget.AppCompat.ButtonBar"
+                android:layout_width="370dp"
+                android:layout_height="386dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/add_activity"
+
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/Planttextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Prayer Plant"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" /><![CDATA[
+
+
+
+            />
+
+        ]]>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="389dp"
+        android:layout_height="295dp"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/Planttextdesc"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="TextView" />
+
+
+
+        <Button
+
+            android:id="@+id/buynow"
+            android:layout_width="134dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Buy Now" />
+
+    </LinearLayout>
+
+</LinearLayout>

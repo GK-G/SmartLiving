@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name" translatable="false">SmartLiving</string>
+    <string name="preferences">Preferences</string>
+    <string name="title_activity_usage">Usage</string>
+    <string name="total">Total</string>
+    <string name="electric_fee_example">$ 0</string>
+    <string name="electric_usage_example" translatable="false">0 kWh</string>
+    <string name="days">Days</string>
+    <string name="activity_per_day">Activity per day</string>
+    <string name="add_activity" >Add activity</string>
+    <string name="electronic">Electronic</string>
+    <string name="number">Number</string>
+    <string name="usage_day">Usage / day</string>
+    <string name="electronic_name">Electronic Name</string>
+    <string name="template_daily_usage">Template usage/day</string>
+    <string name="basic_charge">Basic Charge Fee</string>
+    <string name="energy_charge">Fee per kWh</string>
+    <string name="others_fee">Other Fees</string>
+    <string name="electronic_template">Electronic Template</string>
+    <string name="mode">Mode</string>
+    <string name="double_score" translatable="false">" : "</string>
+    <string name="watt" translatable="false">Watt</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="default_number_electronic" translatable="false">1</string>
+    <string name="number_of_items">Number of Items</string>
+    <string name="save">Save</string>
+    <string name="currency_options">Currency</string>
+    <string name="carpet_area">Carpet Area</string>
+    <string name="no_room" translatable="false">No of Rooms</string>
+    <string name="no_family" translatable="false">Number of people living</string>
+    <string name="carpet_area_example" translatable="false">551 Sq.ft </string>
+    <string name="no_room_example" translatable="false">3BHK</string>
+    <string name="no_people_example" translatable="false">4</string>
+    <string name="prayerplant_desc_short" translatable="false">This house plant removes 14% of carbon dioxide in your home air in just 24 hours.Maranta leuconeura, also known as prayer plant, is a species of flowering plant in the family Marantaceae, native to the Brazilian tropical forests. It is a variable, rhizomatous perennial, growing to 30 cm tall and broad, with crowded clumps of evergreen, strikingly-marked oval leaves, each up to 12 cm long. </string>
+    <string name="Rubberplant_desc_short" translatable="false">This house plant removes 13% of carbon dioxide in your home air in just 24 hours. Ficus elastica, the rubber fig, rubber bush, rubber tree, rubber plant, or Indian rubber bush, Indian rubber tree, is a species of flowering plant in the family Moraceae, native to eastern parts of South and Southeast Asia. It has become naturalized in Sri Lanka, the West Indies, and the US state of Florida. </string>
+    <string name="BirdNestFernplant_desc_short" translatable="false">This house plant removes 12.5% of carbon dioxide in your home air in just 24 hours.Asplenium nidus is an epiphytic species of fern in the family Aspleniaceae, native to tropical southeastern Asia, eastern Australia, Hawaii, Polynesia, Christmas Island, India, and eastern Africa. It is known by the common names birds-nest fern or simply nest fern. </string>
+
+</resources>
