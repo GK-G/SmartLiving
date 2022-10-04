@@ -5,4 +5,6 @@
         android:orderInCategory="100" app:showAsAction="never" />
     <item android:id="@+id/action_electronic_type" android:title="@string/electronic_template"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_AQI" android:title="Check Air Quality Index"
+        android:orderInCategory="100" app:showAsAction="never" />
 </menu>

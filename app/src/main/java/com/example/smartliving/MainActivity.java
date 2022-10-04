@@ -2,6 +2,7 @@ package com.example.smartliving;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.ClipData;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -82,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
         initAddUsageButton();
         initListUsage();
         calculateTotal();
+
+
 
 
 
@@ -361,6 +364,16 @@ public class MainActivity extends AppCompatActivity {
 
             return true;
         }
+        else if (id == R.id.action_AQI) {
+
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_VIEW);
+            intent.addCategory(Intent.CATEGORY_BROWSABLE);
+            intent.setData(Uri.parse("https://app.cpcbccr.com/AQI_India/"));
+            startActivity(intent);
+
+        return true;
+    }
 
         return super.onOptionsItemSelected(item);
     }
