@@ -29,22 +29,22 @@ public class PlantActivity1 extends AppCompatActivity {
         LinearLayout linearlayout = (LinearLayout) findViewById(R.id.Plant_content_main);
         linearlayout.setOnTouchListener(new OnSwipeTouchListener(PlantActivity1.this) {
             public void onSwipeTop() {
-                Toast.makeText(PlantActivity1.this, "top", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PlantActivity1.this, "10+ Plant required", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(PlantActivity1.this, PlantRecommendationActivity.class);
                 startActivity(intent);
             }
             public void onSwipeRight() {
-                Toast.makeText(PlantActivity1.this, "right", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PlantActivity1.this, "Dashboard", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(PlantActivity1.this, MainActivity.class);
                 startActivity(intent);
             }
             public void onSwipeLeft() {
-                Toast.makeText(PlantActivity1.this, "left", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PlantActivity1.this, "Dashboard", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(PlantActivity1.this, MainActivity.class);
                 startActivity(intent);
             }
             public void onSwipeBottom() {
-                Toast.makeText(PlantActivity1.this, "bottom", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PlantActivity1.this, "10+ Plant required", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(PlantActivity1.this, PlantActivity2.class);
                 startActivity(intent);
             }

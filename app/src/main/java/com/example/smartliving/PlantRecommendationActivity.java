@@ -64,22 +64,22 @@ public class PlantRecommendationActivity extends AppCompatActivity {
         LinearLayout linearlayout = (LinearLayout) findViewById(R.id.content_main);
         linearlayout.setOnTouchListener(new OnSwipeTouchListener(PlantRecommendationActivity.this) {
             public void onSwipeTop() {
-                Toast.makeText(PlantRecommendationActivity.this, "top", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PlantRecommendationActivity.this, "5+ Plant required", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(PlantRecommendationActivity.this, PlantActivity1.class);
                 startActivity(intent);
             }
             public void onSwipeRight() {
-                Toast.makeText(PlantRecommendationActivity.this, "right", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PlantRecommendationActivity.this, "Dashboard", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(PlantRecommendationActivity.this, MainActivity.class);
                 startActivity(intent);
             }
             public void onSwipeLeft() {
-                Toast.makeText(PlantRecommendationActivity.this, "left", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PlantRecommendationActivity.this, "Dashboard", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(PlantRecommendationActivity.this, MainActivity.class);
                 startActivity(intent);
             }
             public void onSwipeBottom() {
-                Toast.makeText(PlantRecommendationActivity.this, "bottom", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PlantRecommendationActivity.this, "5+ Plant required", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(PlantRecommendationActivity.this, PlantActivity2.class);
                 startActivity(intent);
             }

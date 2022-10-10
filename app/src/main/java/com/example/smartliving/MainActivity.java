@@ -86,12 +86,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
     }
 
 
@@ -125,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
         double feeUsagePerKwh = (double) silectricPreferences.getFloat("usage_fee_per_kwh", 1);
         double feeBase = (double) silectricPreferences.getFloat("basic_fee", 0);
         double feeOthers = (double) silectricPreferences.getFloat("others_fee", 0);
+
 
         double totalMonthlyUsage = totalKwh * feeUsagePerKwh;
         totalMonthlyUsage = totalMonthlyUsage + feeBase + feeOthers;
@@ -160,6 +155,8 @@ public class MainActivity extends AppCompatActivity {
                 if (totalCO2 > 0 && totalCO2 < 100) {
                     Toast.makeText(MainActivity.this, "CO2 is above "+(Math.floor(totalCO2)),
                             Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "5+ Plant required ",
+                            Toast.LENGTH_LONG).show();
 
                     Intent intent = new Intent(MainActivity.this, PlantRecommendationActivity.class);
                     startActivity(intent);
@@ -169,11 +166,15 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     Toast.makeText(MainActivity.this, "CO2 is above 100",
                             Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "10+ Plant required ",
+                            Toast.LENGTH_LONG).show();
                 }
                 else if(totalCO2 > 200 && totalCO2 < 400){
                     Intent intent = new Intent(MainActivity.this, PlantActivity2.class);
                     startActivity(intent);
                     Toast.makeText(MainActivity.this, "CO2 is above 200",
+                            Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "15+ Plant required ",
                             Toast.LENGTH_LONG).show();
                 }
                 else if(totalCO2 > 400){
@@ -311,7 +312,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkPreferences() {
 
+
         boolean hasInitiated = silectricPreferences.getBoolean("has_initiated", false);
+       /* int a=1;
+        if(a==1){
+            Intent intent = new Intent(MainActivity.this, login.class);
+            startActivity(intent);
+        }*/
         if (!hasInitiated) {
 
             SharedPreferences.Editor editorSharedPref = silectricPreferences.edit();
